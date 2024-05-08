@@ -10,7 +10,7 @@
 char auth[] = "";
 const char* ssid = "";
 const char* pass = "";
-const int   checkInterval = 500;
+const int   checkInterval = 1000;
 int status = WL_IDLE_STATUS;
 
 //===========================================================
