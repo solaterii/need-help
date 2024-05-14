@@ -8,13 +8,12 @@ void bh_get() {
   // Serial.print("Cahaya : ");
   // Serial.println((light_level < 20) ? "Gelap" : "Terang");
   // Serial.println((String)"Lux: "+light_level+" lx");
-  // bhValue();
+  bhValue();
   log_cahaya = (light_level < 30) ? 1 : 0;
   
   Blynk.virtualWrite(V1, light_level);
   Blynk.virtualWrite(V6, log_cahaya);
   Blynk.virtualWrite(V52, log_cahaya);
-  
 }
 
 void bhValue(){

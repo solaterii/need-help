@@ -1,8 +1,8 @@
 void kanopi() {
   openK = digitalRead(kanopiOpen_pin);
   closedK = digitalRead(kanopiClose_Pin);
-  // Serial.println((String)"Limit Buka = "+openK);
-  // Serial.println((String)"Limit Tutup = "+closedK);
+  Serial.println((String)"Limit Buka = "+openK);
+  Serial.println((String)"Limit Tutup = "+closedK);
 
   if (openK == 1 && closedK == 0) {
     checkKanopi("kanopi_tertutup", 1);
